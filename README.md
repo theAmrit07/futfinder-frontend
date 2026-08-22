@@ -56,7 +56,7 @@ npm install
 Create a `.env` file in the project root:
 
 ```env
-EXPO_PUBLIC_API_URL=http://localhost:8000/api
+EXPO_PUBLIC_API_URL=https://futsal-finder.onrender.com 
 ```
 
 The correct value depends on how you're running the app:
