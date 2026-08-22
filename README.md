@@ -20,25 +20,25 @@ A React Native (Expo) app for finding and joining futsal matches. Built to run o
 - AsyncStorage for token persistence
 - Plain `fetch` against a Django REST Framework + SimpleJWT backend
 
-## Project Structure
+### Project Structure
 
+```text
 src/
-├── api/
-│   ├── client.js        # Base request handler: token attach, auto-refresh, error parsing
-│   ├── authApi.js       # Register, login
-│   └── matchesApi.js    # List, create, update, delete, join, leave
+├── api/                    # Fetch wrappers — one file per API resource
+│   ├── client.js          # Base request handler: token attach, auto-refresh, error parsing
+│   ├── authApi.js         # Register, login
+│   └── matchesApi.js      # List, create, update, delete, join, leave
 │
 ├── context/
-│   └── AuthContext.js   # Global auth state
+│   └── AuthContext.js     # Global auth state
 │
 ├── navigation/
-│   └── AppNavigator.js  # Auth stack vs. main app stack
+│   └── AppNavigator.js    # Auth stack vs. main app stack
 │
-├── screens/             # One screen per route
+├── screens/               # One screen per route
 │
 └── components/
-    └── MatchCard.js     # Match list item
-
+    └── MatchCard.js       # Match list item
 
 ## Getting Started
 
