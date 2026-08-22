@@ -40,7 +40,6 @@ src/
 └── components/
     └── MatchCard.js       # Match list item
 
-## Getting Started
 
 ### Prerequisites
 
